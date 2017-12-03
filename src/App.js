@@ -7,8 +7,6 @@ import Home from './pages/Home'
 import Search from './pages/Search'
 import Product from './pages/Product'
 
-import createHistory from 'history/createBrowserHistory'
-
 import { BrowserRouter, Route } from 'react-router-dom'
 
 class App extends React.Component {

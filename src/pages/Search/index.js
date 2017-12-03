@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 import './Search.css'
 
-const ML_SEARCH_URL = "/api/items"
+const ML_SEARCH_URL = "http://localhost:8000/api/items"
 
 export default class Search extends React.Component {
 

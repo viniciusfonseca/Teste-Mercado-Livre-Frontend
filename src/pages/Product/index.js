@@ -40,7 +40,12 @@ export default class Product extends React.Component {
                                 <h4 style={{ fontWeight: 'normal' }}>
                                     { this.state.item.title }
                                 </h4>
-                                <h1 style={{ marginTop: 0 }}>$ { this.state.item.price.amount } </h1>
+                                <span className="flex-row" style={{ marginTop: 0, fontSize: '44px' }}>$ { this.state.item.price.amount }
+                                    <span style={{ marginTop: '6px', fontSize: '20px' }}>{ (this.state.item.price.decimals).toString().padStart(2, '0') }</span>
+                                </span>
+                                <button className="item-buy">
+                                    Comprar
+                                </button>
                             </Flex.Column>
                         </Flex.Row>
                         <h2 style={{ fontWeight: 'normal' }}> Descrição do Produto </h2>
