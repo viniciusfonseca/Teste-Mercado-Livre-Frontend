@@ -45,9 +45,9 @@ export default class Layout extends React.Component {
                                 </Flex.Column>
                             </form>
                     </nav>
-                    <Flex.Column flex stretch style={{ overflowY: 'auto', backgroundColor: 'rgb(238, 238, 238)' }}>
+                    <main className="flex-col flex" style={{ overflowY: 'auto', backgroundColor: 'rgb(238, 238, 238)' }}>
                         { this.props.children }
-                    </Flex.Column>
+                    </main>
                 </Flex.Column>
             )} />
         )
